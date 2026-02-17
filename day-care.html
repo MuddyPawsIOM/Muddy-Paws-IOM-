@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Day Care – Muddy Paws IOM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root{--pink:#ff69b4;--pink-soft:#ffe4ef;--pink-deep:#c2185b;--text:#222;--card:#fff;--border:rgba(0,0,0,.08);}
+    *{box-sizing:border-box}
+    body{font-family:Arial,sans-serif;margin:0;background:var(--pink-soft);color:var(--text);}
+    .topbar{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);}
+    .wrap{max-width:900px;margin:0 auto;padding:14px 16px;}
+    .nav{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;}
+    .brand strong{font-size:16px;}
+    .brand span{font-size:12px;opacity:.75;display:block;line-height:1.1}
+    .links{display:flex;gap:8px;flex-wrap:wrap}
+    .links a{text-decoration:none;color:var(--pink-deep);font-weight:700;padding:10px 12px;border-radius:999px;background:#fff;border:1px solid var(--border);}
+    .links a:hover{border-color: rgba(194,24,91,.35);}
+    header{background:linear-gradient(135deg,var(--pink),#ff9ad1);color:#fff;padding:26px 0;}
+    h1{margin:0;font-size:28px;}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;box-shadow:0 6px 18px rgba(0,0,0,.05);margin-top:14px;}
+    ul{line-height:1.6}
+    .pillrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .pill{background:rgba(194,24,91,.08);border:1px solid rgba(194,24,91,.18);color:var(--pink-deep);padding:8px 10px;border-radius:999px;font-weight:700;font-size:13px}
+    a{color:var(--pink-deep)}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap nav">
+      <div class="brand"><strong>Muddy Paws IOM</strong><span>Pet Care Directory</span></div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="dog-walking.html">Dog Walking</a>
+        <a href="dog-grooming.html">Dog Grooming</a>
+        <a href="home-stay.html">Home Stay</a>
+        <a href="day-care.html">Day Care</a>
+      </div>
+    </div>
+  </div>
 
+  <header><div class="wrap"><h1>Day Care</h1></div></header>
+
+  <main class="wrap">
+    <div class="card">
+      <h2>What a good daycare looks like</h2>
+      <div class="pillrow">
+        <div class="pill">Safe groups</div>
+        <div class="pill">Supervised play</div>
+        <div class="pill">Rest time</div>
+        <div class="pill">Clean environment</div>
+      </div>
+      <ul>
+        <li>Small, well-managed groups (not chaos)</li>
+        <li>Dogs matched by size/temperament/play style</li>
+        <li>Breaks and quiet time built in</li>
+        <li>Clear pick-up/drop-off procedures</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Questions to ask</h2>
+      <ul>
+        <li>What’s your maximum number of dogs per staff member?</li>
+        <li>Do you do an assessment / trial session?</li>
+        <li>How do you handle scuffles or over-arousal?</li>
+        <li>Are dogs ever left unsupervised?</li>
+        <li>What vaccinations / parasite control do you require?</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Signs it might not be the right fit</h2>
+      <ul>
+        <li>Your dog comes home consistently stressed, hoarse, or overly exhausted</li>
+        <li>Little transparency (no policies, no updates, vague answers)</li>
+        <li>Overcrowding or poor hygiene</li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>
