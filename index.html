@@ -1,87 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Muddy Paws IOM – Isle of Man Pet Care Directory</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <title>Muddy Paws IOM – Isle of Man Pet Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    :root{
-      --pink:#ff69b4;
-      --pink-soft:#ffe4ef;
-      --pink-deep:#c2185b;
-      --text:#222;
-      --card:#fff;
-      --border: rgba(0,0,0,.08);
-    }
-    *{box-sizing:border-box}
-    body{
+    body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      margin:0;
-      background:var(--pink-soft);
-      color:var(--text);
+      background: #ffe4ef;
+      color: #222;
     }
-    .topbar{
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(255,255,255,.9);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--border);
+    header {
+      background: #ff69b4;
+      color: white;
+      padding: 25px 15px;
+      text-align: center;
     }
-    .wrap{max-width:1000px; margin:0 auto; padding:14px 16px;}
-    .nav{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      align-items:center;
-      justify-content:space-between;
+    nav {
+      background: white;
+      padding: 10px;
+      text-align: center;
     }
-    .brand{
-      display:flex;
-      flex-direction:column;
-      line-height:1.1;
+    nav a {
+      margin: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #c2185b;
     }
-    .brand strong{font-size:16px;}
-    .brand span{font-size:12px; opacity:.75;}
-    .links{
-      display:flex;
-      gap:8px;
-      flex-wrap:wrap;
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
     }
-    .links a{
-      text-decoration:none;
-      color: var(--pink-deep);
-      font-weight:700;
-      padding:10px 12px;
-      border-radius:999px;
-      background:#fff;
-      border:1px solid var(--border);
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 15px;
     }
-    .links a:hover{border-color: rgba(194,24,91,.35);}
-    header.hero{
-      background: linear-gradient(135deg, var(--pink), #ff9ad1);
-      color:#fff;
-      padding:42px 0;
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+      color: #666;
     }
-    .hero h1{margin:0 0 8px; font-size:34px;}
-    .hero p{margin:0; max-width: 60ch; opacity:.95;}
-    .hero .buttons{
-      margin-top:18px;
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-    }
-    .btn{
-      display:inline-block;
-      text-decoration:none;
-      font-weight:800;
-      padding:12px 14px;
-      border-radius:12px;
-      border:2px solid rgba(255,255,255,.65);
-      color:#fff;
-    }
-    .btn.secondary{
-      background: rgba(255,255,255,.15);
-    }
-    main{padding:20px 0 40px;}
-    .grid{
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Muddy Paws IOM</h1>
+  <p>Isle of Man Pet Care Directory</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="dog-walking.html">Dog Walking</a>
+  <a href="dog-grooming.html">Dog Grooming</a>
+  <a href="home-stay.html">Home Stay</a>
+  <a href="day-care.html">Day Care</a>
+</nav>
+
+<main>
+  <div class="card">
+    <h2>Welcome 👋</h2>
+    <p>
+      This site is created and maintained by <strong>Muddy Paws IOM</strong>
+      to help pet owners across the Isle of Man find trusted pet care services.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Browse articles</h3>
+    <ul>
+      <li>How to choose a dog walker</li>
+      <li>What to expect from grooming</li>
+      <li>Home stay vs kennels</li>
+      <li>Is day care right for your dog?</li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  © Muddy Paws IOM · Isle of Man
+</footer>
+
+</body>
+</html>
